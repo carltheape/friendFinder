@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Friend Finder Survey</title>
+<!--         <script src="../data/friends.js"></script>
+ -->    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!--     <link rel="stylesheet" type="text/css" href="../../style.css">
+ -->
+
+</head>
+
+<body>
+<!-- The Modal -->
+<div id="myModal" class="modal text-center">
+
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Your new best friend is...</h2>
+    <h2 id="modalPend"></h2>
+    <div id="modalPic"></div>
+
+
+  </div>
+
+</div>
+
+    <div class="container">
+        <h2>Survey Questions</h2>
+        <hr>
+        <h3><strong>About You</strong></h3>
+        <h4>Name (Required)</h4>
+        <input type="text" name="" id="name" class="form-control" required>
+        <h4>Link to Photo Image (Required)</h4>
+        <input type="text" name="" id="photo" class="form-control" required>
+        <hr>
+
+        <form>
+            <div class="form-group">
+                <h3>Q1: My face is cool...</h3>
+                <label for="sel1">Select one (1-Stongly Disagree 5-Strongly Agree):</label>
+                <select class="form-control" id="q1">
+                    <option style="display:none" selected disabled>Choose here</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="sel1">Select one (1-Stongly Disagree 5-Strongly Agree):</label>
+                <select class="form-control" id="q2">
+                    <option style="display:none" selected disabled>Choose here</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="sel1">Select one (1-Stongly Disagree 5-Strongly Agree):</label>
+                <select class="form-control" id="q3">
+                    <option style="display:none" selected disabled>Choose here</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="sel1">Select one (1-Stongly Disagree 5-Strongly Agree):</label>
+                <select class="form-control" id="q4">
+                    <option style="display:none" selected disabled>Choose here</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="sel1">Select one (1-Stongly Disagree 5-Strongly Agree):</label>
+                <select class="form-control" id="q5">
+                    <option style="display:none" selected disabled>Choose here</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="sel1">Select one (1-Stongly Disagree 5-Strongly Agree):</label>
+                <select class="form-control" id="q6">
+                    <option style="display:none" selected disabled>Choose here</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="sel1">Select one (1-Stongly Disagree 5-Strongly Agree):</label>
+                <select class="form-control" id="q7">
+                    <option style="display:none" selected disabled>Choose here</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="sel1">Select one (1-Stongly Disagree 5-Strongly Agree):</label>
+                <select class="form-control" id="q8">
+                    <option style="display:none" selected disabled>Choose here</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="sel1">Select one (1-Stongly Disagree 5-Strongly Agree):</label>
+                <select class="form-control" id="q9">
+                    <option style="display:none" selected disabled>Choose here</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="sel1">Select one (1-Stongly Disagree 5-Strongly Agree):</label>
+                <select class="form-control" id="q10">
+                    <option style="display:none" selected disabled>Choose here</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </form>
+        <br>
+        <br>
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit
+        </button>
+        <hr>
+        <footer class="footer">
+    </div>
+    </footer>
+    </div>
+    <script type="text/javascript">
+        var validateFill = false;
+        var validateScores = false;
+    // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+    function getFriends(newScores) {
+        var compTable = [];
+        var compare = 0;
+
+
+      // Here we get the location of the root page.
+      // We use this instead of explicitly saying the URL is localhost:3001 because the url will change when we deploy.
+      var currentURL = window.location.origin;
+
+      // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
+      $.ajax({ url: currentURL + "/api/peeps", method: "GET" })
+      .done(function(peepsData) {
+        var i = 0;
+        // Loop through and display each of the customers
+        for (var i = 0; i < peepsData.length-1; i++) {
+            for (var j = 0; j < 10; j++) {
+                // console.log(peepsData[i].scores)
+               compare = compare+Math.abs(parseInt(peepsData[i].scores[j])-parseInt(newScores[j]))
+               console.log(typeof compare)
+            }
+            compTable.push(compare);
+            console.log(compTable);
+            compare = 0;
+        }
+        var min = Math.min.apply(null,compTable)
+        var idx = compTable.indexOf(min);
+        console.log(idx);
+        console.log(peepsData[idx].name);
+        var buddyPic = "<img src="+peepsData[idx].pic+" width='35%'>";
+          $("#modalPend").html(peepsData[idx].name);
+          $("#modalPic").html(buddyPic);
+             modal.style.display = "block";  
+      });
+   
+    };
+    // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+    // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+
+    $("#submit").on("click", function(event) {
+        console.log("validate fill before: "+ validateFill);
+        console.log("validate scores before: " + validateScores);
+        event.preventDefault();
+        if ($("#name").val() === "") { $("#name").addClass("alert alert-danger") } else { $("#name").removeClass("alert alert-danger") };
+        if ($("#photo").val() === "") { $("#photo").addClass("alert alert-danger") } else { $("#photo").removeClass("alert alert-danger") };
+        if ($("#q1").val() === null) { $("#q1").addClass("alert-danger") } else { $("#q1").removeClass("alert-danger") };
+        if ($("#q2").val() === null) { $("#q2").addClass("alert-danger") } else { $("#q2").removeClass("alert-danger") };
+        if ($("#q3").val() === null) { $("#q3").addClass("alert-danger") } else { $("#q3").removeClass("alert-danger") };
+        if ($("#q4").val() === null) { $("#q4").addClass("alert-danger") } else { $("#q4").removeClass("alert-danger") };
+        if ($("#q5").val() === null) { $("#q5").addClass("alert-danger") } else { $("#q5").removeClass("alert-danger") };
+        if ($("#q6").val() === null) { $("#q6").addClass("alert-danger") } else { $("#q6").removeClass("alert-danger") };
+        if ($("#q7").val() === null) { $("#q7").addClass("alert-danger") } else { $("#q7").removeClass("alert-danger") };
+        if ($("#q8").val() === null) { $("#q8").addClass("alert-danger") } else { $("#q8").removeClass("alert-danger") };
+        if ($("#q9").val() === null) { $("#q9").addClass("alert-danger") } else { $("#q9").removeClass("alert-danger") };
+        if ($("#q10").val() === null) { $("#q10").addClass("alert-danger") } else { $("#q10").removeClass("alert-danger") };
+
+        // Here we grab the form elements
+        var newFriend = {
+            name: $("#name").val().trim(),
+            pic: $("#photo").val().trim(),
+            scores: [
+                $("#q1").val(),
+                $("#q2").val(),
+                $("#q3").val(),
+                $("#q4").val(),
+                $("#q5").val(),
+                $("#q6").val(),
+                $("#q7").val(),
+                $("#q8").val(),
+                $("#q9").val(),
+                $("#q10").val()
+            ]
+        }
+
+
+        if (newFriend.name !== "" && newFriend.pic!== "") {validateFill = true};
+        for (var i = 0; i < newFriend.scores.length; i++) {
+            if(newFriend.scores[i] !== null){validateScores = true}
+                else{return validateScores = false}
+
+        };
+
+        if (validateFill === false || validateScores ===false) {window.scrollTo(0, 0); } else {    
+                    $("#name").val("");
+            $("#photo").val("");        
+            $.post("/api/peeps", newFriend,
+                function(data) {
+                });
+            //Show validated and match with someone else
+            getFriends(newFriend.scores);
+            validateScores = false;
+            validateFill = false;
+
+        };
+
+});
+
+
+
+
+    </script>
+    <style type="text/css">
+        
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+    </style>
+</body>
+
+</html>
